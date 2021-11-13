@@ -28,12 +28,10 @@ public class Controller {
         if(message.isEmpty()){
             return;
         }
-
         client.sendMessage(message);
-        messageArea.appendText(message + "\nотправленно: " + date.toString() + "\n");
+        messageArea.appendText("Вы: \n" + message + "\nотправленно: " + date.toString() + "\n");
         messageField.clear();
         messageField.requestFocus();
-
     }
 
     public void MenuSelectExit(ActionEvent actionEvent) {
